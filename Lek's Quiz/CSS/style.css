@@ -257,3 +257,31 @@ main{
 .menuMain input:checked{
     border-bottom: 3px solid var(--colorPrimary);
 }
+.containerMain{
+    width: 90%;
+    height: 40vh;
+    overflow: hidden;
+    margin: auto;
+}
+.wapperMain{
+    width: 100%;
+    height: 300%;
+    display: flex;
+    flex-direction: column;
+}
+.contentMenu{
+    width: 100%;
+    height: 100%;
+    margin: 5px auto;
+    border: 5px solid var(--colorPrimary);
+    /* padding: 15px; */
+}
+main:has(#btnMenuHowPlay:checked) .wapperMain{
+    margin-top: 0%;
+}
+main:has(#btnMenuRegister:checked) .wapperMain{
+    margin-top: -28%;
+}
+main:has(#btnMenuAbout:checked) .wapperMain{
+    margin-top: -55%;
+}
