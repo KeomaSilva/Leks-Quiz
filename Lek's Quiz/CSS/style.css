@@ -1,0 +1,259 @@
+@import url('./theme.css');
+
+body{
+    background-color: var(--colorPrimary);
+    color: var(--letterLight);
+    transition: .3s;
+    letter-spacing: .7px;
+    margin: auto;
+}
+label{
+    cursor: pointer;
+}
+input{
+    cursor: pointer;
+}
+.principal{
+    width: 90%;
+    max-height: fit-content;
+    padding: 10px 5px ;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--colorSecondary);
+    border: 5px solid var(--colorTertiary);
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.switch{
+    width: 45px;
+    height: 23px;
+    border-radius: 25px;
+    background-color: var(--colorTertiary);
+    position: relative;
+}
+.slider{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--colorPrimary);
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.switch:has(#btnSwitch:checked) > .slider{
+    left:50%;
+    box-shadow: inset 8px -4px 0px 0px var(--letterLight);
+    background-color: var(--colorTertiary);
+}
+#btnSwitch{
+    display: none;
+}
+#menuGame{
+    width: max-content;
+    height: max-content;
+    border-radius: 25px;
+    padding: 5px 15px;
+    background-color: var(--colorTertiary);
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#menuGame:hover{
+    box-shadow: 0px 0px 0px 3px var(--colorPrimary);
+}
+#btnGame{
+    display: none;
+}
+.login{
+    width: max-content;
+    height: max-content;
+    border-radius: 25px;
+    padding: 5px 10px;
+    background-color: var(--colorTertiary);
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+#login{
+    display: none;
+}
+.containerLogin{
+    background-color: var(--colorSecondary);
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    opacity: 0;
+    padding: 30px 10px;
+    border: 3px solid var(--colorTertiary);
+    border-top: none;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    transition: .25s ease-in-out;
+    pointer-events: none;
+}
+.login:has(#login:checked) .containerLogin{
+    background-color: var(--colorSecondary);
+    top: 45px;
+    opacity: 1;
+    padding: 30px 10px;
+    border: 3px solid var(--colorTertiary);
+    pointer-events: all;
+}
+.containerLogin label{
+    position: relative;
+    border: none;
+}
+.containerLogin input{
+    padding: 5px;
+    outline: none;
+    box-shadow: none;
+    border-radius: 5px;
+    border: none;
+}
+.containerLogin span{
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    transition: .25s;
+}
+.containerLogin input:is(:valid,:focus) + span{
+    top:-10px;
+}
+.containerLogin a{
+    text-decoration: none;
+    text-transform: lowercase;
+    color: var(--letterLight);
+}
+.containerLogin a:is(:hover){
+    font-weight: 700;
+    color: var(--letterLight);
+    text-shadow: 1px 1px 1px var(--letterDark);
+}
+#buttonLogin{
+    background-color: var(--colorTertiary);
+    width: fit-content;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 50px;
+    font-weight: 700;
+    cursor: pointer;
+}
+#buttonLogin:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 0px 2px var(--colorPrimary);
+}
+.colorsTheme{
+    width: max-content;
+    display: block;
+    position: relative;
+    left:10%;
+}
+.btnColorsTheme{
+    background-color: var(--colorSecondary);
+    margin: 0;
+    padding: 3px 15px;
+    border: 3px solid var(--colorTertiary);
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+    position: relative;
+    transition: 0.3s;
+}
+.btnColorsTheme label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+#btnMenuColorsTheme{
+    display: none;
+}
+.menuColorsTheme{
+    background-color: var(--colorSecondary);
+    max-width: 80vW;
+    position: absolute;
+    bottom: 100%;
+    left: -5%;
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+    border: 2px solid var(--colorTertiary);
+    border-top: none;
+    border-radius: 0px 0px 5px 5px;
+    transition: .4s;
+}
+.menuColorsTheme input{
+    appearance: none;
+    width: 50px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: var(--colorPrimary);
+    box-shadow: inset 0px 0px 0px 3px var(--colorPrimary)
+}
+.menuColorsTheme input:checked{
+    background-color: var(--colorTertiary);
+    box-shadow: inset 0px 0px 0px 2px var(--colorPrimary),
+    0px 0px 0px 2px var(--colorTertiary);
+}
+.btnColorsTheme:has(#btnMenuColorsTheme:checked){
+    margin-top: 27px;
+}
+.btnColorsTheme:has(#btnMenuColorsTheme:checked) i{
+    transform: rotate(180deg);
+}
+.logo{
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.logo img{
+    position: absolute;
+    pointer-events: none;
+    height: fit-content;
+    transform: scale(.7);
+}
+main{
+    background-color: var(--colorTertiary);
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+}
+.menuMain{
+    background-color: var(--colorSecondary);
+    border-top: 3px solid var(--colorTertiary);
+    border-bottom: 3px solid var(--colorTertiary);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.menuMain label{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+    font-weight: 700;
+    font-size: small;
+}
+.menuMain input{
+    appearance: none;
+    width: 100%;
+    height: 50%;
+}
+.menuMain input:checked{
+    border-bottom: 3px solid var(--colorPrimary);
+}

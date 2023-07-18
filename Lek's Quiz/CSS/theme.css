@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/* theme colors */
+:root{
+    --colorPrimary:#e4e4e4;
+    --letterLight:#292929;
+    --letterDark:#e4e4e4;
+}
+:root:has(#btnSwitch:checked){
+    --colorPrimary:#292929;
+    --letterLight:#e4e4e4;
+    --letterDark:#292929;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--colorPrimary);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--colorTertiary);
+    border-radius: 10px;
+}
+:root:has(#colorWhite:checked){
+    --colorSecondary:#adadad;
+    --colorTertiary:#5c5c5c;
+}
+#colorWhite{
+    background-color: #5c5c5c;
+}
+:root:has(#colorPurple:checked){
+    --colorSecondary:#CF72F0;
+    --colorTertiary:#711593;   
+}
+#colorPurple{
+    background-color: #711593;
+}
+:root:has(#colorBlue:checked){
+    --colorSecondary:#728EF0;
+    --colorTertiary:#153093;
+}
+#colorBlue{
+    background-color: #153093;
+}
+:root:has(#colorGreen:checked){
+    --colorSecondary:#8EF072;
+    --colorTertiary:#309315;
+}
+#colorGreen{
+    background-color: #309315;
+}
+:root:has(#colorYellow:checked){
+    --colorSecondary:#F0E672;
+    --colorTertiary:#938815;
+}
+#colorYellow{
+    background-color: #938815;
+}
+:root:has(#colorOrange:checked){
+    --colorSecondary:#F0B672;
+    --colorTertiary:#935815;
+}
+#colorOrange{
+    background-color: #935815;
+}
+:root:has(#colorRed:checked){
+    --colorSecondary:#F07272;
+    --colorTertiary:#931515;
+}
+#colorRed{
+    background-color: #931515;
+}
+:root:has(#colorPink:checked){
+    --colorSecondary:#F072D1;
+    --colorTertiary:#931573;
+}
+#colorPink{
+    background-color: #931573;
+}

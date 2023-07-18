@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lek's Quiz</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <header class="principal">
+        <label for="btnSwitch" class="switch">
+            <input type="checkbox" name="changeTheme" id="btnSwitch">
+            <span class="slider"></span>
+        </label>
+        <label for="btnGame" id="menuGame">
+            <input type="checkbox" name="menuGame" id="btnGame">
+            <span class="spanGame"><strong>play</strong></span>
+            <i class="fa-solid fa-rocket"></i>
+        </label>
+        <div class="login">
+            <label class="login" for="login" id="nomeLogin"><strong>login</strong>
+                <input type="checkbox" id="login">
+            </label>
+            <div class="containerLogin">
+                <label for="name" class="labelName">
+                    <input autocomplete="off" id="name" type="text" required="text">
+                    <span class="name">User Name</span>
+               </label>
+                <label for="password" class="labelPassword">
+                    <input type="password" id="password" required="">
+                    <span class="password">Password</span>
+               </label>
+                <a class="esqueceu" href="#">Esqueceu a Senha?</a>
+                <button type="submit" onclick="userNameLogin()" id="buttonLogin">Entrar</button>
+                <a class="cadastro-link" href="#">Caso não tenha conta. Cadastre-se</a>
+            </div>
+        </div>
+    </header>
+    <nav class="colorsTheme" id="colorsTheme">
+        <div class="btnColorsTheme">
+            <label for="btnMenuColorsTheme">Colors Theme <i class="fa-solid fa-angle-down"></i></label>
+            <input type="checkbox" name="" id="btnMenuColorsTheme">
+            <div class="menuColorsTheme">
+                <input type="radio" name="colorTheme" id="colorWhite" checked>
+                <input type="radio" name="colorTheme" id="colorPurple">
+                <input type="radio" name="colorTheme" id="colorBlue">
+                <input type="radio" name="colorTheme" id="colorGreen">
+                <input type="radio" name="colorTheme" id="colorYellow">
+                <input type="radio" name="colorTheme" id="colorOrange">
+                <input type="radio" name="colorTheme" id="colorRed">
+                <input type="radio" name="colorTheme" id="colorPink">
+            </div>
+        </div>
+       
+        
+    </nav>
+    <div class="logo">
+        <img src="./IMG/lek's.png" alt="logo Lek's Quiz">
+
+    </div>
+    <main>
+        <nav class="menuMain">
+            <label for="btnMenuHowPlay"> Como jogar
+                <input type="radio" name="btnMenuMain" id="btnMenuHowPlay" checked>
+            </label>
+            <label for="btnMenuRegister"> Cadastre-se
+                <input type="radio" name="btnMenuMain" id="btnMenuRegister">
+            </label>
+            <label for="btnMenuAbout"> Sobre
+                <input type="radio" name="btnMenuMain" id="btnMenuAbout">
+            </label>
+        </nav>
+        <section class="containerMain">
+            <div class="contentMenu contentHowPlay"></div>
+            <div class="contentMenu contentRegister"></div>
+            <div class="contentMenu contentAbout"></div>
+        </section>
+    </main>
+<script src="https://kit.fontawesome.com/8daf915ec6.js" crossorigin="anonymous"></script>
+</body>
+</html>
