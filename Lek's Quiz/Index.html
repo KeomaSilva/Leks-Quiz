@@ -57,7 +57,7 @@
     </div>
     <main>
         <nav class="menuMain">
-            <label for="btnMenuHowPlay"> Como jogar
+            <label for="btnMenuHowPlay"> Modos de Jogo
                 <input type="radio" name="btnMenuMain" id="btnMenuHowPlay" checked>
             </label>
             <label for="btnMenuRegister"> Cadastre-se
@@ -69,9 +69,59 @@
         </nav>
         <section class="containerMain">
             <section class="wapperMain">
-                <div class="contentMenu contentHowPlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, perferendis.</div>
-                <div class="contentMenu contentRegister">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deserunt hic iste corporis inventore ab minus distinctio in ad vel saepe ratione voluptas cupiditate perspiciatis praesentium non, libero voluptatibus totam.</div>
-                <div class="contentMenu contentAbout">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ab dolorem, et laudantium officia incidunt unde cumque necessitatibus ad nulla quod quia nesciunt atque facere iure, vitae explicabo eum vero!</div>
+                <div class="contentMenu contentHowPlay" id="menu1">
+                    <div class="navHowPlay">
+                        <label for="btnFastMode">
+                            <h3>Modo Rápido</h3>
+                            <input type="radio" name="btnmodeGame" id="btnFastMode" checked>
+                        </label>
+                        <label for="btnChallengeMode">
+                            <h3>Modo Desafio</h3>
+                            <input type="radio" name="btnmodeGame" id="btnChallengeMode">
+                        </label>
+                        <label for="btnGroupMode">
+                            <h3>Desafio em Grupo</h3>
+                            <input type="radio" name="btnmodeGame" id="btnGroupMode">
+                        </label>
+                    </div>
+                    <div class="textModeGame">
+                        <div class="fastMG">
+                            <p><i class="fa-solid fa-square-caret-right"></i>
+                                Nesse modo de jogo o usuário poderá escolher apenas a dificuldade das perguntas, podendo escolher mais que uma dificuldade.
+                            </p>
+                            <p><i class="fa-solid fa-square-caret-right"></i>
+                                Com a dificuldade escolhida, o usuário receberá perguntas aleatórias de todas as áreas desse nível.
+                            </p>
+                            <p><i class="fa-solid fa-square-caret-right"></i>
+                                O jogo consiste em responder o maior número de perguntas certas no tempo limite de 1 minuto.
+                            </p>
+                        </div>
+                        <div class="challengeMG">
+                            <p><i class="fa-solid fa-square-caret-right"></i>
+                                Nesse modo de jogo o usuário poderá escolher a dificuldade e as áreas das perguntas, podendo escolher mais que uma.
+                            </p>
+                            <p><i class="fa-solid fa-square-caret-right"></i>
+                                O usuário receberá perguntas aleatórias de todas as áreas escolhidas dos níveis selecionados.
+                            </p>
+                            <p><i class="fa-solid fa-square-caret-right"></i>
+                                O jogo consiste em responder o maior número de perguntas certas no tempo limite de 2 minuto.
+                            </p>
+                        </div>
+                        <div class="GroupMG">
+                            <p><i class="fa-solid fa-square-caret-right"></i>
+                                Nesse modo de jogo o usuário poderá criar seu próprio quiz com as suas regras.
+                            </p>
+                            <p><i class="fa-solid fa-square-caret-right"></i>
+                                O usuário poderá escolher se quer que criar as perguntas ou que o sistema as randomize.
+                            </p>
+                            <p><i class="fa-solid fa-square-caret-right"></i>
+                                As salas criadas pelos usuários podem ser acessadas de modo público ou privado, tendo assim liberdade de escolha quais usuários podem acessar a sala.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentMenu contentRegister" id="menu2">Menu 2 - registro - Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deserunt hic iste corporis inventore ab minus distinctio in ad vel saepe ratione voluptas cupiditate perspiciatis praesentium non, libero voluptatibus totam.</div>
+                <div class="contentMenu contentAbout" id="menu3">menu 3 - about - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ab dolorem, et laudantium officia incidunt unde cumque necessitatibus ad nulla quod quia nesciunt atque facere iure, vitae explicabo eum vero!</div>
             </section>
         </section>
     </main>

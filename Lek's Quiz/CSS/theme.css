@@ -19,7 +19,7 @@
     --letterDark:#292929;
 }
 ::-webkit-scrollbar{
-    width: 12px;
+    width: 8px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: var(--colorPrimary);
