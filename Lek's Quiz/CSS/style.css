@@ -355,3 +355,84 @@ main:has(#btnChallengeMode:checked) .challengeMG{
 main:has(#btnGroupMode:checked) .GroupMG{
     left: 0%;
 }
+.contentRegister{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 35px;
+    overflow: auto;
+}
+.labelRegister{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.labelRegister input{
+    border: none;
+    width: 80%;
+    margin: auto;
+    padding: 5px 15px;
+    outline: none;
+    border-radius: 10px;
+}
+.labelRegister span{
+    background-color: var(--colorTertiary);
+    color: var(--letterDark);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 2px 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-55%);
+    transition: .3s ease-out;
+    pointer-events: none;
+}
+.labelRegister input:is(:focus,:valid) ~ span{
+    top: -50%;}
+.contentRegister h3{
+    width: 90%;
+    text-align: center;
+    border-bottom: 2px solid var(--colorPrimary);
+}
+.contentRegister button{
+    background-color: var(--colorSecondary);
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px;
+    font-weight: 600;
+    color: var(--letterLight);
+    text-transform: uppercase;
+    border: none;
+}
+.contentRegister button:hover{
+    background-color: var(--colorTertiary);
+    box-shadow: 0px 0px 2px 2px var(--colorPrimary);
+    color: var(--letterDark);
+}
+.contentAbout{
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    flex-wrap: nowrap;
+    gap: 15px;
+    text-align: center;
+    line-height: 2.2rem;
+}
+.contentAbout h3{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 2px solid var(--colorPrimary);
+}
