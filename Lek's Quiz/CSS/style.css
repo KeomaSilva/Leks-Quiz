@@ -220,6 +220,8 @@ input{
     height: 230px;
     overflow: hidden;
     object-fit: cover;
+    pointer-events: none;
+    margin-top: -30px;
 }
 .logo img{
     position: absolute;
@@ -345,6 +347,7 @@ main:has(#btnMenuAbout:checked) .wapperMain{
     position: absolute;
     left: -110%;
     transition: .3s ease-in-out;
+    gap: 20px;
 }
 main:has(#btnFastMode:checked) .fastMG{
     left: 0%;
@@ -362,7 +365,7 @@ main:has(#btnGroupMode:checked) .GroupMG{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-wrap: nowrap;
     gap: 35px;
     overflow: auto;
@@ -372,6 +375,9 @@ main:has(#btnGroupMode:checked) .GroupMG{
     display: grid;
     place-items: center;
     position: relative;
+}
+.invalid{
+    background-color: lightcoral;
 }
 .labelRegister input{
     border: none;
@@ -396,7 +402,8 @@ main:has(#btnGroupMode:checked) .GroupMG{
     pointer-events: none;
 }
 .labelRegister input:is(:focus,:valid) ~ span{
-    top: -50%;}
+    top: -50%;
+}
 .contentRegister h3{
     width: 90%;
     text-align: center;
