@@ -30,3 +30,31 @@ form.addEventListener("submit", (event) => {
 
     form.submit();
 })
+
+const theme = document.querySelectorAll('[name=colorTheme]')
+
+const storeTheme = function(theme){
+    localStorage.setItem("theme", theme)
+}
+theme.forEach(themeOption =>{
+    themeOption.addEventListener('click', () =>{
+        storeTheme(themeOption.id)
+    })
+})
+
+const changeTheme = function(){
+    const activeTheme = localStorage.getItem("theme");
+    theme.forEach((themeOption)=>{
+        if(themeOption.id === activeTheme){
+            themeOption.checked = true;
+        }
+    })
+}
+document.onload = changeTheme();
+
+const linkRegister = document.getElementById('linkRegister');
+
+linkRegister.addEventListener('click', ()=>{
+    const btnMenuRegister = document.getElementById('btnMenuRegister');
+    btnMenuRegister.checked = true;
+})

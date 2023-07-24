@@ -127,9 +127,11 @@ input{
     transform: translateY(-50%);
     display: block;
     transition: .25s;
+    color: var(--colorSecondary);
 }
 .containerLogin input:is(:valid,:focus) + span{
     top:-10px;
+    color: var(--letterLight);
 }
 .containerLogin a{
     text-decoration: none;
@@ -139,7 +141,7 @@ input{
 .containerLogin a:is(:hover){
     font-weight: 700;
     color: var(--letterLight);
-    text-shadow: 1px 1px 1px var(--letterDark);
+    text-shadow: 1px 1px 1px var(--letterLight);
 }
 #buttonLogin{
     background-color: var(--colorTertiary);
@@ -150,10 +152,12 @@ input{
     padding: 5px 50px;
     font-weight: 700;
     cursor: pointer;
+    color: var(--letterLight);
 }
 #buttonLogin:hover{
     transform: scale(1.2);
     box-shadow: 0px 0px 0px 2px var(--colorPrimary);
+    color: var(--letterLight);
 }
 .colorsTheme{
     width: max-content;
@@ -247,6 +251,7 @@ main{
     gap: 10px;
 }
 .menuMain label{
+    flex: 1 1 100%;
     text-align: center;
     text-transform: uppercase;
     padding: 5px;
@@ -361,6 +366,7 @@ main:has(#btnGroupMode:checked) .GroupMG{
 .contentRegister{
     width: 100%;
     margin: auto;
+    padding-top: 30px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -389,7 +395,7 @@ main:has(#btnGroupMode:checked) .GroupMG{
 }
 .labelRegister span{
     background-color: var(--colorTertiary);
-    color: var(--letterDark);
+    color: var(--letterLight);
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -424,7 +430,7 @@ main:has(#btnGroupMode:checked) .GroupMG{
 .contentRegister button:hover{
     background-color: var(--colorTertiary);
     box-shadow: 0px 0px 2px 2px var(--colorPrimary);
-    color: var(--letterDark);
+    color: var(--letterLight);
 }
 .contentAbout{
     overflow: auto;

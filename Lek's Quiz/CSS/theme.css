@@ -9,14 +9,14 @@
 }
 /* theme colors */
 :root{
-    --colorPrimary:#e4e4e4;
-    --letterLight:#292929;
-    --letterDark:#e4e4e4;
+    --colorPrimary:#F5F5F5;
+    --letterLight:#1f1f1f;
+    color-scheme: light;
 }
 :root:has(#btnSwitch:checked){
-    --colorPrimary:#292929;
-    --letterLight:#e4e4e4;
-    --letterDark:#292929;
+    --colorPrimary:#616161;
+    --letterLight:#525252;
+    color-scheme: dark;
 }
 ::-webkit-scrollbar{
     width: 8px;
@@ -29,58 +29,46 @@
     border-radius: 10px;
 }
 :root:has(#colorWhite:checked){
-    --colorSecondary:#adadad;
-    --colorTertiary:#5c5c5c;
+    --colorSecondary:#acbdb9;
+    --colorTertiary:#405854;
 }
 #colorWhite{
-    background-color: #5c5c5c;
-}
-:root:has(#colorPurple:checked){
-    --colorSecondary:#CF72F0;
-    --colorTertiary:#711593;   
-}
-#colorPurple{
-    background-color: #711593;
-}
-:root:has(#colorBlue:checked){
-    --colorSecondary:#728EF0;
-    --colorTertiary:#153093;
-}
-#colorBlue{
-    background-color: #153093;
+    background-color: #acbdb9;
 }
 :root:has(#colorGreen:checked){
-    --colorSecondary:#8EF072;
-    --colorTertiary:#309315;
+    --colorSecondary:#b2eadd;
+    --colorTertiary:#39cfb1;
 }
 #colorGreen{
-    background-color: #309315;
-}
-:root:has(#colorYellow:checked){
-    --colorSecondary:#F0E672;
-    --colorTertiary:#938815;
-}
-#colorYellow{
-    background-color: #938815;
-}
-:root:has(#colorOrange:checked){
-    --colorSecondary:#F0B672;
-    --colorTertiary:#935815;
-}
-#colorOrange{
-    background-color: #935815;
+    background-color: #b2eadd;
 }
 :root:has(#colorRed:checked){
-    --colorSecondary:#F07272;
-    --colorTertiary:#931515;
+    --colorSecondary:#e4bcee;
+    --colorTertiary:#d28fe3;
 }
 #colorRed{
-    background-color: #931515;
+    background-color: #e4bcee;
 }
-:root:has(#colorPink:checked){
-    --colorSecondary:#F072D1;
-    --colorTertiary:#931573;
-}
-#colorPink{
-    background-color: #931573;
+@media(prefers-color-scheme: dark){
+    :root:has(#colorWhite:checked){
+        --colorSecondary:#9E9E9E;
+        --colorTertiary:#BDBDBD;
+    }
+    #colorWhite{
+        background-color: #405854;
+    }
+    :root:has(#colorGreen:checked){
+        --colorSecondary:#39cfb1;
+        --colorTertiary:#b2eadd;
+    }
+    #colorGreen{
+        background-color: #39cfb1;
+    }
+    :root:has(#colorRed:checked){
+        --colorSecondary:#d28fe3;
+        --colorTertiary:#e4bcee;
+    }
+    #colorRed{
+        background-color: #d28fe3;
+    }
 }

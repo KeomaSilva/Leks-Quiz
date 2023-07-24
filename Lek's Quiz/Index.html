@@ -32,7 +32,7 @@
                </label>
                 <a class="esqueceu" href="#">Esqueceu a Senha?</a>
                 <button type="submit" onclick="userNameLogin()" id="buttonLogin">Entrar</button>
-                <a class="cadastro-link" href="#">Caso não tenha conta. Cadastre-se</a>
+                <a class="cadastro-link" id="linkRegister" href="#formRegister">Caso não tenha conta. Cadastre-se</a>
             </div>
         </div>
     </header>
@@ -42,13 +42,8 @@
             <input type="checkbox" name="" id="btnMenuColorsTheme">
             <div class="menuColorsTheme">
                 <input type="radio" name="colorTheme" id="colorWhite" checked>
-                <input type="radio" name="colorTheme" id="colorPurple">
-                <input type="radio" name="colorTheme" id="colorBlue">
                 <input type="radio" name="colorTheme" id="colorGreen">
-                <input type="radio" name="colorTheme" id="colorYellow">
-                <input type="radio" name="colorTheme" id="colorOrange">
                 <input type="radio" name="colorTheme" id="colorRed">
-                <input type="radio" name="colorTheme" id="colorPink">
             </div>
         </div>
     </nav>
@@ -121,7 +116,6 @@
                     </div>
                 </div>
                 <form class="contentMenu contentRegister" id="formRegister">
-                    <h3>Cadastro</h3>
                     <label class="labelRegister" for="nickName">
                         <input type="text" name="nickName" id="nickName" required="text">
                         <span>Digite seu nickname</span>
